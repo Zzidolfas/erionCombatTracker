@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erion Combat Tracker</title>
+    <style>
+        /* Basic styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        #dropZone {
+            margin-bottom: 20px;
+        }
+        .original-value {
+            color: gray;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Erion Combat Tracker</h1>
+
+    <!-- Drag-and-Drop Area -->
+    <div id="dropZone" style="border: 2px dashed #ccc; padding: 20px; margin-bottom: 20px;">
+        <p>Drag & drop a .txt file here</p>
+    </div>
+
+
+    <!-- New Section: Form to Add a New Monster -->
+    <div id="addMonsterSection" style="margin-bottom: 20px;">
+        <h2>Add New Monster</h2>
+        <p>WHOPS!!! If you refresh the site ALL monsters will be deleted!</p>
+        
+        <label for="monsterName">Name:</label>
+        <input type="text" id="monsterName" placeholder="Monster Name" required>
+        
+        <label for="monsterInitiative">Initiative:</label>
+        <input type="number" id="monsterInitiative" placeholder="Initiative" required>
+        
+        <label for="monsterWill">Will:</label>
+        <input type="number" id="monsterWill" placeholder="Will" required>
+        
+        <label for="monsterReflex">Reflex:</label>
+        <input type="number" id="monsterReflex" placeholder="Reflex" required>
+        
+        <label for="monsterFortitude">Fortitude:</label>
+        <input type="number" id="monsterFortitude" placeholder="Fortitude" required>
+        
+        <label for="monsterHP">HP:</label>
+        <input type="number" id="monsterHP" placeholder="HP" required>
+
+        <button id="addMonsterButton">Add Monster</button>
+    </div>
+
+    <!-- Button to Sort by Initiative -->
+    <div style="margin-bottom: 20px;">
+        <button id="sortByInitiativeButton">Sort by Initiative</button>
+    </div>
+
+    <table id="creatureTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Initiative</th>
+                <th>Will</th>
+                <th>Reflex</th>
+                <th>Fortitude</th>
+                <th>HP</th>
+                <th>Damage</th>
+                <th>Roll</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Creatures will be dynamically added here -->
+        </tbody>
+    </table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
