@@ -1,0 +1,3 @@
+Goblin, Initiative:12, Will:8, Reflex:10, Fortitude:6, HP:30
+Orc, Initiative:14, Will:9, Reflex:12, Fortitude:15, HP:45
+Dragon, Initiative:20, Will:18, Reflex:22, Fortitude:25, HP:200
